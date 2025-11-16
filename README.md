@@ -24,13 +24,8 @@ The application intelligently handles images of various sizes:
 
 ## 📸 Screenshots
 
-### Before Segmentation
-![Original Image Selection](images/image1.png)
-*Select a retinal fundus image from your photo library*
-
-### After Segmentation
-![Segmentation Results](images/image2.png)
-*View the segmented vessels mask and overlay visualization*
+![App Demo](images/demo.png)
+*Retinal vessel segmentation demo showing original image selection, segmented vessels mask, and overlay visualization*
 
 ## 🏗️ Technical Architecture
 
@@ -230,8 +225,7 @@ RetinalVesselSegDemo/
 │   └── mlmodel/
 │       └── VesselSegmenter.mlpackage/   # Core ML model
 ├── images/
-│   ├── image1.png                       # Screenshot: Before segmentation
-│   └── image2.png                       # Screenshot: After segmentation
+│   └── demo.png                         # App demo screenshot
 └── README.md                            # This file
 ```
 
