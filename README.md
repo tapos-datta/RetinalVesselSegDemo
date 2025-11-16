@@ -25,6 +25,7 @@ The application intelligently handles images of various sizes:
 ## 📸 Screenshots
 
 ![App Demo](images/demo.png)
+
 *Retinal vessel segmentation demo showing original image selection, segmented vessels mask, and overlay visualization*
 
 ## 🏗️ Technical Architecture
