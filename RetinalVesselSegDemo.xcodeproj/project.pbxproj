@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91F9D2612ECA5E400080197D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F9D2592ECA5E400080197D /* Preview Assets.xcassets */; };
+		91F9D2622ECA5E400080197D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F9D25B2ECA5E400080197D /* Assets.xcassets */; };
+		91F9D2632ECA5E400080197D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F9D25C2ECA5E400080197D /* MainView.swift */; };
+		91F9D2642ECA5E400080197D /* RVSegmentationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F9D25D2ECA5E400080197D /* RVSegmentationApp.swift */; };
+		91F9D2652ECA5E400080197D /* VesselSegmenter.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 91F9D25E2ECA5E400080197D /* VesselSegmenter.mlpackage */; };
+		91F9D2662ECA5E400080197D /* SegmentationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F9D25F2ECA5E400080197D /* SegmentationViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91F9D2262ECA3E830080197D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91F9D20D2ECA3E820080197D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91F9D2142ECA3E820080197D;
+			remoteInfo = RetinalVesselSegDemo;
+		};
+		91F9D2302ECA3E830080197D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91F9D20D2ECA3E820080197D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91F9D2142ECA3E820080197D;
+			remoteInfo = RetinalVesselSegDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		91F9D2152ECA3E820080197D /* RetinalVesselSegDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetinalVesselSegDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F9D2252ECA3E830080197D /* RetinalVesselSegDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetinalVesselSegDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F9D22F2ECA3E830080197D /* RetinalVesselSegDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetinalVesselSegDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F9D2592ECA5E400080197D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		91F9D25B2ECA5E400080197D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91F9D25C2ECA5E400080197D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		91F9D25D2ECA5E400080197D /* RVSegmentationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RVSegmentationApp.swift; sourceTree = "<group>"; };
+		91F9D25E2ECA5E400080197D /* VesselSegmenter.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = VesselSegmenter.mlpackage; sourceTree = "<group>"; };
+		91F9D25F2ECA5E400080197D /* SegmentationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentationViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		91F9D2282ECA3E830080197D /* RetinalVesselSegDemoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RetinalVesselSegDemoTests;
+			sourceTree = "<group>";
+		};
+		91F9D2322ECA3E830080197D /* RetinalVesselSegDemoUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RetinalVesselSegDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91F9D2122ECA3E820080197D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F9D2222ECA3E830080197D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F9D22C2ECA3E830080197D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91F9D20C2ECA3E820080197D = {
+			isa = PBXGroup;
+			children = (
+				91F9D2602ECA5E400080197D /* RetinalVesselSegDemo */,
+				91F9D2282ECA3E830080197D /* RetinalVesselSegDemoTests */,
+				91F9D2322ECA3E830080197D /* RetinalVesselSegDemoUITests */,
+				91F9D2162ECA3E820080197D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91F9D2162ECA3E820080197D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91F9D2152ECA3E820080197D /* RetinalVesselSegDemo.app */,
+				91F9D2252ECA3E830080197D /* RetinalVesselSegDemoTests.xctest */,
+				91F9D22F2ECA3E830080197D /* RetinalVesselSegDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91F9D25A2ECA5E400080197D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				91F9D2592ECA5E400080197D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		91F9D2602ECA5E400080197D /* RetinalVesselSegDemo */ = {
+			isa = PBXGroup;
+			children = (
+				91F9D2672ECA5E490080197D /* mlmodel */,
+				91F9D25A2ECA5E400080197D /* Preview Content */,
+				91F9D25B2ECA5E400080197D /* Assets.xcassets */,
+				91F9D25C2ECA5E400080197D /* MainView.swift */,
+				91F9D25D2ECA5E400080197D /* RVSegmentationApp.swift */,
+				91F9D25F2ECA5E400080197D /* SegmentationViewModel.swift */,
+			);
+			path = RetinalVesselSegDemo;
+			sourceTree = "<group>";
+		};
+		91F9D2672ECA5E490080197D /* mlmodel */ = {
+			isa = PBXGroup;
+			children = (
+				91F9D25E2ECA5E400080197D /* VesselSegmenter.mlpackage */,
+			);
+			path = mlmodel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91F9D2142ECA3E820080197D /* RetinalVesselSegDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91F9D2392ECA3E830080197D /* Build configuration list for PBXNativeTarget "RetinalVesselSegDemo" */;
+			buildPhases = (
+				91F9D2112ECA3E820080197D /* Sources */,
+				91F9D2122ECA3E820080197D /* Frameworks */,
+				91F9D2132ECA3E820080197D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetinalVesselSegDemo;
+			packageProductDependencies = (
+			);
+			productName = RetinalVesselSegDemo;
+			productReference = 91F9D2152ECA3E820080197D /* RetinalVesselSegDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91F9D2242ECA3E830080197D /* RetinalVesselSegDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91F9D23C2ECA3E830080197D /* Build configuration list for PBXNativeTarget "RetinalVesselSegDemoTests" */;
+			buildPhases = (
+				91F9D2212ECA3E830080197D /* Sources */,
+				91F9D2222ECA3E830080197D /* Frameworks */,
+				91F9D2232ECA3E830080197D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91F9D2272ECA3E830080197D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				91F9D2282ECA3E830080197D /* RetinalVesselSegDemoTests */,
+			);
+			name = RetinalVesselSegDemoTests;
+			packageProductDependencies = (
+			);
+			productName = RetinalVesselSegDemoTests;
+			productReference = 91F9D2252ECA3E830080197D /* RetinalVesselSegDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		91F9D22E2ECA3E830080197D /* RetinalVesselSegDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91F9D23F2ECA3E830080197D /* Build configuration list for PBXNativeTarget "RetinalVesselSegDemoUITests" */;
+			buildPhases = (
+				91F9D22B2ECA3E830080197D /* Sources */,
+				91F9D22C2ECA3E830080197D /* Frameworks */,
+				91F9D22D2ECA3E830080197D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91F9D2312ECA3E830080197D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				91F9D2322ECA3E830080197D /* RetinalVesselSegDemoUITests */,
+			);
+			name = RetinalVesselSegDemoUITests;
+			packageProductDependencies = (
+			);
+			productName = RetinalVesselSegDemoUITests;
+			productReference = 91F9D22F2ECA3E830080197D /* RetinalVesselSegDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91F9D20D2ECA3E820080197D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					91F9D2142ECA3E820080197D = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					91F9D2242ECA3E830080197D = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 91F9D2142ECA3E820080197D;
+					};
+					91F9D22E2ECA3E830080197D = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 91F9D2142ECA3E820080197D;
+					};
+				};
+			};
+			buildConfigurationList = 91F9D2102ECA3E820080197D /* Build configuration list for PBXProject "RetinalVesselSegDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91F9D20C2ECA3E820080197D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 91F9D2162ECA3E820080197D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91F9D2142ECA3E820080197D /* RetinalVesselSegDemo */,
+				91F9D2242ECA3E830080197D /* RetinalVesselSegDemoTests */,
+				91F9D22E2ECA3E830080197D /* RetinalVesselSegDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91F9D2132ECA3E820080197D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F9D2612ECA5E400080197D /* Preview Assets.xcassets in Resources */,
+				91F9D2622ECA5E400080197D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F9D2232ECA3E830080197D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F9D22D2ECA3E830080197D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91F9D2112ECA3E820080197D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91F9D2632ECA5E400080197D /* MainView.swift in Sources */,
+				91F9D2642ECA5E400080197D /* RVSegmentationApp.swift in Sources */,
+				91F9D2652ECA5E400080197D /* VesselSegmenter.mlpackage in Sources */,
+				91F9D2662ECA5E400080197D /* SegmentationViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F9D2212ECA3E830080197D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F9D22B2ECA3E830080197D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91F9D2272ECA3E830080197D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91F9D2142ECA3E820080197D /* RetinalVesselSegDemo */;
+			targetProxy = 91F9D2262ECA3E830080197D /* PBXContainerItemProxy */;
+		};
+		91F9D2312ECA3E830080197D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91F9D2142ECA3E820080197D /* RetinalVesselSegDemo */;
+			targetProxy = 91F9D2302ECA3E830080197D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		91F9D2372ECA3E830080197D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91F9D2382ECA3E830080197D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91F9D23A2ECA3E830080197D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RetinalVesselSegDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = B59XTG4S49;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prime.RetinalVesselSegDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91F9D23B2ECA3E830080197D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RetinalVesselSegDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = B59XTG4S49;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prime.RetinalVesselSegDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		91F9D23D2ECA3E830080197D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B59XTG4S49;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prime.RetinalVesselSegDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetinalVesselSegDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetinalVesselSegDemo";
+			};
+			name = Debug;
+		};
+		91F9D23E2ECA3E830080197D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B59XTG4S49;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prime.RetinalVesselSegDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetinalVesselSegDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetinalVesselSegDemo";
+			};
+			name = Release;
+		};
+		91F9D2402ECA3E830080197D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B59XTG4S49;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prime.RetinalVesselSegDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RetinalVesselSegDemo;
+			};
+			name = Debug;
+		};
+		91F9D2412ECA3E830080197D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B59XTG4S49;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prime.RetinalVesselSegDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RetinalVesselSegDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91F9D2102ECA3E820080197D /* Build configuration list for PBXProject "RetinalVesselSegDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F9D2372ECA3E830080197D /* Debug */,
+				91F9D2382ECA3E830080197D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91F9D2392ECA3E830080197D /* Build configuration list for PBXNativeTarget "RetinalVesselSegDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F9D23A2ECA3E830080197D /* Debug */,
+				91F9D23B2ECA3E830080197D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91F9D23C2ECA3E830080197D /* Build configuration list for PBXNativeTarget "RetinalVesselSegDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F9D23D2ECA3E830080197D /* Debug */,
+				91F9D23E2ECA3E830080197D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91F9D23F2ECA3E830080197D /* Build configuration list for PBXNativeTarget "RetinalVesselSegDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F9D2402ECA3E830080197D /* Debug */,
+				91F9D2412ECA3E830080197D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91F9D20D2ECA3E820080197D /* Project object */;
+}
